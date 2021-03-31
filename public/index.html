@@ -10,13 +10,26 @@
             rel="stylesheet"
             integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
             crossorigin="anonymous">
+        <link rel="stylesheet" href="../src/styles.css" />
 
         <title>Video Background</title>
     </head>
     <body>
         <main>
             <div class="container">
-
+                <video id="vac-video" class="video-background" muted autoplay loop>
+                    <source src="assets/vac.mp4" type="video/mp4">
+                </video>
+                <div class="video-content">
+                    <h1>COVID-19 Vaccine</h1>
+                    <p>
+                        Development of the vaccine. Currently Pfizer, Moderna, Johnson & Johnson
+                        and Astrazeneca have developed the vaccine. It is the newest of its kind
+                        as it is an mRNA vaccine. Currently has not been approved by the FDA but under
+                        emergency use authorization.
+                    </p>
+                    <button id="videoBtn" onclick="videoPlayPause()">Pause</button>
+                </div>
             </div>
         </main>
 
