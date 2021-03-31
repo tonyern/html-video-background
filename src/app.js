@@ -1,13 +1,12 @@
-var video = document.querySelector("vac-video");
-var button = document.querySelector("videoBtn");
+var video = document.getElementById("vacVideo");
+var button = document.getElementById("videoBtn");
 var videoPlayPause = function () {
-    /*if (video.paused) {
+    if (video.paused) {
         video.play();
         button.innerHTML = "Pause";
-    } else {
+    }
+    else {
         video.pause();
         button.innerHTML = "Play";
-    }*/
-    //video.pause();
-    button.innerHTML = "Play";
+    }
 };
